@@ -27,6 +27,7 @@ export default function ProductItem({ product, addToCartHandler }) {
           type="button"
           onClick={() => addToCartHandler(product)}
         >
+          {' '}
           Add to cart
         </button>
       </div>
