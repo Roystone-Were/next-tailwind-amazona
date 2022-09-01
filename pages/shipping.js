@@ -78,7 +78,10 @@ export default function ShippingScreen() {
             id="address"
             {...register('address', {
               required: 'Please enter address',
-              minLength: { value: 3, message: 'Address is more than 2 chars' },
+              minLength: {
+                value: 3,
+                message: 'Address is more than 2 characters',
+              },
             })}
           />
           {errors.address && (
